@@ -8,11 +8,11 @@ Bundle::Posy - A bundle to install Posy and plugins
 
 =head1 VERSION
 
-This describes version B<0.50> of Bundle::Posy.
+This describes version B<0.60> of Bundle::Posy.
 
 =cut
 
-our $VERSION = '0.50';
+our $VERSION = '0.60';
 
 =head1 SYNOPSIS
 
@@ -22,27 +22,9 @@ our $VERSION = '0.50';
 
 Posy - a website generator inspired by blosxom
 
-File::Spec - to make dealing with files more portable
-
-File::stat
-
-File::Find
-
-Storable 2.06 - to store indexes
-
-CGI::Minimal - for CGI with less overhead
-
-Getopt::Long 2.34 - for command-line scripts
-
-Pod::Usage - for command-line scripts
-
-Getopt::ArgvFile 1.09 - for command-line scripts
-
 Posy::Plugin::AntiSpambot - Posy plugin to obfustcate mail links
 
 Posy::Plugin::BinFile - Posy plugin to serve (binary) non-entry files
-
-File::MMagic - find MIME-types of files
 
 Posy::Plugin::Canonical - Posy plugin to force redirect to canonical URL.
 
@@ -50,11 +32,7 @@ Posy::Plugin::Categories - Posy plugin to give category links.
 
 Posy::Plugin::CgiCarp - Posy plugin to aid debugging by using CGI::Carp
 
-CGI::Carp - help CGI debugging
-
 Posy::Plugin::Dump - Posy plugin to aid debugging by dumping object contents
-
-Data::Dumper - dump data
 
 Posy::Plugin::DynamicCss - Posy plugin to load different CSS styles based on the UserAgent.
 
@@ -72,9 +50,9 @@ Posy::Plugin::LocalDepth - Posy plugin to filter by local depth
 
 Posy::Plugin::NearLinks - Posy plugin to give links of articles in the current category
 
-Posy::Plugin::Pod - Posy plugin to convert POD files to HTML
+Posy::Plugin::Paginate - Posy plugin to paginate multiple entries.
 
-Pod::Simple::HTML - convert POD to HTML
+Posy::Plugin::Pod - Posy plugin to convert POD files to HTML
 
 Posy::Plugin::RandQuote - Posy plugin to give a random quote from a file
 
@@ -86,8 +64,6 @@ Text::Template - templating system which uses Perl as its language
 
 Posy::Plugin::TextToHTML - Posy plugin to convert plain text files to HTML
 
-HTML::TextToHTML 2.34 - to convert text to HTML
-
 Posy::Plugin::ThemeCss - Posy plugin for Cascading Style Sheet themes
 
 Posy::Plugin::ThisFlavour - Posy plugin to change local links to the current flavour
@@ -96,12 +72,11 @@ Posy::Plugin::Toc - Posy plugin create a table of contents
 
 Posy::Plugin::YamlConfig - Posy plugin to read config files in YAML format
 
-YAML 0.35 - For YamlConfig
-
 =head1 DESCRIPTION
 
 This bundle includes all the modules used by the Posy website content
 management system, and all the major plugins for the Posy system.
+It does NOT include the modules upon which they depend.
 
 A I<Bundle> is a module that simply defines a collection of other
 modules.  It is used by the L<CPAN> module to automate the fetching,

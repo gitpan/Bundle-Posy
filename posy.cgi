@@ -1,6 +1,8 @@
 #!/usr/bin/perl -T
 # vim:ts=8 sw=4 sts=4 ai
 require v5.6.1;
+$ENV{PATH} ="/bin:/usr/bin:/usr/local/bin";
+delete @ENV{ 'IFS', 'CDPATH', 'ENV', 'BASH_ENV'};
 use strict;
 
 =head1 NAME
@@ -9,11 +11,11 @@ posy.cgi - CGI script using the Posy website generator
 
 =head1 VERSION
 
-This describes version B<0.50> of posy.cgi.
+This describes version B<0.60> of posy.cgi.
 
 =cut
 
-our $VERSION = '0.50';
+our $VERSION = '0.60';
 
 =head1 SYNOPSIS
 
@@ -160,6 +162,7 @@ our @plugins = qw(Posy::Core
     Posy::Plugin::Pod
     Posy::Plugin::FileStats
     Posy::Plugin::DynamicCss
+    Posy::Plugin::Paginate
     Posy::Plugin::ThemeCss
     Posy::Plugin::FlavourMenu
     Posy::Plugin::LinkList
@@ -218,6 +221,7 @@ our @actions = qw(init_params
 	    filter_by_date
 	    filter_by_localdepth
 	    sort_entries
+	    filter_by_page
 	    content_type
 	    head_template
 	    dynamic_css_set

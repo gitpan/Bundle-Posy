@@ -12,4 +12,7 @@ TODO list for Bundle-Posy
  33. Posy::Plugin::NotFound
     Added:30/12/04, 12:00  Priority: medium
 
+ 34. Posy::Plugin::Paginate
+    Added:16/01/05, 16:20  Priority: medium
+
 
