@@ -11,11 +11,11 @@ posy.cgi - CGI script using the Posy website generator
 
 =head1 VERSION
 
-This describes version B<0.65> of posy.cgi.
+This describes version B<0.70> of posy.cgi.
 
 =cut
 
-our $VERSION = '0.65';
+our $VERSION = '0.70';
 
 =head1 SYNOPSIS
 
@@ -177,6 +177,7 @@ our @plugins = qw(Posy::Core
     Posy::Plugin::Toc
     Posy::Plugin::NearLinks
     Posy::Plugin::BinFile
+    Posy::Plugin::NotFound
     );
 
 =item file_extensions
@@ -212,8 +213,8 @@ a plugin which requires adding a new action.
 
 our @actions = qw(init_params
 	    parse_path
-	    stop_if_not_found
 	    set_config
+	    process_path_error
 	    anti_spambot_show_mail
 	    index_entries
 	    index_file_stats

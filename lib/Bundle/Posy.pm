@@ -8,11 +8,11 @@ Bundle::Posy - A bundle to install Posy and plugins
 
 =head1 VERSION
 
-This describes version B<0.65> of Bundle::Posy.
+This describes version B<0.70> of Bundle::Posy.
 
 =cut
 
-our $VERSION = '0.65';
+our $VERSION = '0.70';
 
 =head1 SYNOPSIS
 
@@ -52,6 +52,8 @@ Posy::Plugin::LocalDepth - Posy plugin to filter by local depth
 
 Posy::Plugin::NearLinks - Posy plugin to give links of articles in the current category
 
+Posy::Plugin::NotFound - Posy plugin to provide a custom Not Found page.
+
 Posy::Plugin::Paginate - Posy plugin to paginate multiple entries.
 
 Posy::Plugin::Pod - Posy plugin to convert POD files to HTML
@@ -61,8 +63,6 @@ Posy::Plugin::RandQuote - Posy plugin to give a random quote from a file
 Posy::Plugin::ShortBody - Posy plugin to give the start of an entry body
 
 Posy::Plugin::TextTemplate - Posy plugin for interpolating with Text::Template
-
-Text::Template - templating system which uses Perl as its language
 
 Posy::Plugin::TextToHTML - Posy plugin to convert plain text files to HTML
 
