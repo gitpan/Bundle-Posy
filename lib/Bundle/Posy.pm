@@ -8,11 +8,11 @@ Bundle::Posy - A bundle to install Posy and plugins
 
 =head1 VERSION
 
-This describes version B<0.70> of Bundle::Posy.
+This describes version B<0.71> of Bundle::Posy.
 
 =cut
 
-our $VERSION = '0.70';
+our $VERSION = '0.71';
 
 =head1 SYNOPSIS
 
