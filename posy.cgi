@@ -11,11 +11,11 @@ posy.cgi - CGI script using the Posy website generator
 
 =head1 VERSION
 
-This describes version B<0.60> of posy.cgi.
+This describes version B<0.65> of posy.cgi.
 
 =cut
 
-our $VERSION = '0.60';
+our $VERSION = '0.65';
 
 =head1 SYNOPSIS
 
@@ -158,6 +158,7 @@ our @plugins = qw(Posy::Core
     Posy::Plugin::TextToHTML
     Posy::Plugin::YamlConfig
     Posy::Plugin::Canonical
+    Posy::Plugin::FindGrep
     Posy::Plugin::EntryTitles
     Posy::Plugin::Pod
     Posy::Plugin::FileStats
@@ -224,12 +225,13 @@ our @actions = qw(init_params
 	    filter_by_page
 	    content_type
 	    head_template
+	    foot_template
 	    dynamic_css_set
 	    theme_css_set
 	    flavour_menu_set
+	    findgrep_set
 	    head_render
 	    do_entry_actions
-	    foot_template
 	    foot_render
 	    render_page
 	);
@@ -243,10 +245,11 @@ you're using a plugin which requires adding a new entry action.
 
 our @entry_actions = qw(
 	    count_or_stop
-	    header
-	    entry_template
 	    read_entry
 	    parse_entry
+	    head_render
+	    header
+	    entry_template
 	    short_body
 	    anti_spambot_obscure_mail
 	    rand_quote
@@ -255,6 +258,7 @@ our @entry_actions = qw(
 	    make_toc
 	    render_entry
 	    append_entry
+	    foot_render
 	);
 
 =item DayWeek2Name

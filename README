@@ -6,7 +6,7 @@ Bundle::Posy - A bundle to install Posy and plugins
 
 ==== VERSION ====
 
-This describes version ``0.60'' of Bundle::Posy.
+This describes version ``0.65'' of Bundle::Posy.
 
 
 ==== CONTENTS ====
@@ -31,6 +31,8 @@ the UserAgent.
 Posy::Plugin::EntryTitles - Posy plugin to cache entry titles
 
 Posy::Plugin::FileStats - Posy plugin to cache file statistics
+
+Posy::Plugin::FindGrep - Posy plugin to find files using grep.
 
 Posy::Plugin::FlavourMenu - Posy plugin to make a menu of flavours
 

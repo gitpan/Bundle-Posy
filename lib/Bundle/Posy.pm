@@ -8,11 +8,11 @@ Bundle::Posy - A bundle to install Posy and plugins
 
 =head1 VERSION
 
-This describes version B<0.60> of Bundle::Posy.
+This describes version B<0.65> of Bundle::Posy.
 
 =cut
 
-our $VERSION = '0.60';
+our $VERSION = '0.65';
 
 =head1 SYNOPSIS
 
@@ -39,6 +39,8 @@ Posy::Plugin::DynamicCss - Posy plugin to load different CSS styles based on the
 Posy::Plugin::EntryTitles - Posy plugin to cache entry titles
 
 Posy::Plugin::FileStats - Posy plugin to cache file statistics
+
+Posy::Plugin::FindGrep - Posy plugin to find files using grep.
 
 Posy::Plugin::FlavourMenu - Posy plugin to make a menu of flavours
 
