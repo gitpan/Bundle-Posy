@@ -4,15 +4,15 @@ package Bundle::Posy;
 
 =head1 NAME
 
-Bundle::Posy - A bundle to install Posy and plugins
+Bundle::Posy - A bundle to install Posy and major plugins
 
 =head1 VERSION
 
-This describes version B<0.71> of Bundle::Posy.
+This describes version B<0.72> of Bundle::Posy.
 
 =cut
 
-our $VERSION = '0.71';
+our $VERSION = '0.72';
 
 =head1 SYNOPSIS
 
@@ -22,15 +22,15 @@ our $VERSION = '0.71';
 
 Posy - a website generator inspired by blosxom
 
-Posy::Plugin::AntiSpambot - Posy plugin to obfustcate mail links
+Posy::Plugin::AntiSpambot - Posy plugin to obfustcate mail links.
 
-Posy::Plugin::BinFile - Posy plugin to serve (binary) non-entry files
+Posy::Plugin::BinFile - Posy plugin to serve (binary) non-entry files.
 
 Posy::Plugin::Canonical - Posy plugin to force redirect to canonical URL.
 
 Posy::Plugin::Categories - Posy plugin to give category links.
 
-Posy::Plugin::CgiCarp - Posy plugin to aid debugging by using CGI::Carp
+Posy::Plugin::CgiCarp - Posy plugin to aid debugging by using CGI::Carp.
 
 Posy::Plugin::Dump - Posy plugin to aid debugging by dumping object contents
 
@@ -44,11 +44,17 @@ Posy::Plugin::FindGrep - Posy plugin to find files using grep.
 
 Posy::Plugin::FlavourMenu - Posy plugin to make a menu of flavours
 
+Posy::Plugin::Info - Posy plugin which give supplementary entry information.
+
 Posy::Plugin::LinkExtra - Posy plugin to add extras to local links
 
 Posy::Plugin::LinkList - Posy plugin to give a dynamic list of links
 
 Posy::Plugin::LocalDepth - Posy plugin to filter by local depth
+
+Posy::Plugin::MultiEntry - Posy plugin to enable multiple entries to display for special entry files.
+
+Posy::Plugin::MultiHeader - Posy plugin to enable multiple header templates.
 
 Posy::Plugin::NearLinks - Posy plugin to give links of articles in the current category
 
