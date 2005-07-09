@@ -8,11 +8,11 @@ Bundle::Posy - A bundle to install Posy and major plugins
 
 =head1 VERSION
 
-This describes version B<0.72> of Bundle::Posy.
+This describes version B<0.73> of Bundle::Posy.
 
 =cut
 
-our $VERSION = '0.72';
+our $VERSION = '0.73';
 
 =head1 SYNOPSIS
 
@@ -21,6 +21,12 @@ our $VERSION = '0.72';
 =head1 CONTENTS
 
 Posy - a website generator inspired by blosxom
+
+Posy::Plugin::TextTemplate - Posy plugin for interpolating with Text::Template
+
+Posy::Plugin::YamlConfig - Posy plugin to read config files in YAML format.
+
+Posy::Plugin::FileStats - Posy plugin to cache file statistics.
 
 Posy::Plugin::AntiSpambot - Posy plugin to obfustcate mail links.
 
@@ -32,13 +38,13 @@ Posy::Plugin::Categories - Posy plugin to give category links.
 
 Posy::Plugin::CgiCarp - Posy plugin to aid debugging by using CGI::Carp.
 
+Posy::Plugin::CgiFile - Posy plugin to enable drop-in use of CGI scripts inside Posy.
+
 Posy::Plugin::Dump - Posy plugin to aid debugging by dumping object contents
 
 Posy::Plugin::DynamicCss - Posy plugin to load different CSS styles based on the UserAgent.
 
-Posy::Plugin::EntryTitles - Posy plugin to cache entry titles
-
-Posy::Plugin::FileStats - Posy plugin to cache file statistics
+Posy::Plugin::EntryTitles - Posy plugin to cache entry titles.
 
 Posy::Plugin::FindGrep - Posy plugin to find files using grep.
 
@@ -46,9 +52,9 @@ Posy::Plugin::FlavourMenu - Posy plugin to make a menu of flavours
 
 Posy::Plugin::Info - Posy plugin which give supplementary entry information.
 
-Posy::Plugin::LinkExtra - Posy plugin to add extras to local links
-
 Posy::Plugin::LinkList - Posy plugin to give a dynamic list of links
+
+Posy::Plugin::LinkExtra - Posy plugin to add extras to local links
 
 Posy::Plugin::LocalDepth - Posy plugin to filter by local depth
 
@@ -68,8 +74,6 @@ Posy::Plugin::RandQuote - Posy plugin to give a random quote from a file
 
 Posy::Plugin::ShortBody - Posy plugin to give the start of an entry body
 
-Posy::Plugin::TextTemplate - Posy plugin for interpolating with Text::Template
-
 Posy::Plugin::TextToHTML - Posy plugin to convert plain text files to HTML
 
 Posy::Plugin::ThemeCss - Posy plugin for Cascading Style Sheet themes
@@ -77,8 +81,6 @@ Posy::Plugin::ThemeCss - Posy plugin for Cascading Style Sheet themes
 Posy::Plugin::ThisFlavour - Posy plugin to change local links to the current flavour
 
 Posy::Plugin::Toc - Posy plugin create a table of contents
-
-Posy::Plugin::YamlConfig - Posy plugin to read config files in YAML format
 
 =head1 DESCRIPTION
 
